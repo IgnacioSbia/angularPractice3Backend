@@ -6,4 +6,9 @@ const { regUser } = require("../Controllers/angularPageControllers");
 
 
 //registerUser
-routes.post('register', regUser);
+routes.post('/register', regUser);
+
+
+
+
+module.exports = routes;

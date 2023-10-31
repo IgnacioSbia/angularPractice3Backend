@@ -16,7 +16,7 @@ exports.regUser  = async(req,res) =>{
     try {
         knex('User')
         .insert({
-            email : newUser.mail,
+            mail : newUser.mail,
             password: newUser.password
         })
         .then(res.json({message: "Success!"}))
